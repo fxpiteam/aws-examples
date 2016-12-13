@@ -1,0 +1,8 @@
+{
+  "name": "cod-statistics",
+  "description": "Sample project, will be used to store my COD blackops statistics",
+  "memory": 128,
+  "timeout": 5,
+  "role": "arn:aws:iam::422168606827:role/cod-statistics_lambda_function",
+  "environment": {}
+}

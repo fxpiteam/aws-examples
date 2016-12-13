@@ -1,0 +1,8 @@
+{
+  "name": "apex-dynamo-write",
+  "description": "",
+  "memory": 128,
+  "timeout": 5,
+  "role": "arn:aws:iam::422168606827:role/apex-dynamo-write_lambda_function",
+  "environment": {}
+}
