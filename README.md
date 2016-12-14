@@ -7,3 +7,5 @@ To ease the project's development, we used the following components:
 - Materializecss: my favourite css framework
 - jQuery: as I couldn't use jade (pug) in Amazon S3 and needed jQuery for Materializecss, I used it to load html into another html (like footer and header)
 - apex: from apex.run. This project makes lambda function deployment easier.
+- pdfkit: for browser pdf creation. But it looks like cant create tables.
+- pdfmake: for browser pdf creation. Looks like a fork of pdfkit, but this one can make tables, let's see with one should we pick.
