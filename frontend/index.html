@@ -1,0 +1,67 @@
+<html>
+<!-- --allow-file-access-from-files -->
+
+<head>
+    <meta charset="utf-8">
+    <title>My COD: Blackops Statistics</title>
+
+    <meta name="description" content="This is a simple web, done to learn">
+
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <script src="js/layout.js"></script>
+    <script src="js/main.js"></script>
+
+</head>
+
+
+<body>
+    <div class='Site'>
+
+        <div id="header"></div>
+
+        <main class='Site-content'>
+            <div class="container">
+                <h1>Latest matches</h1>
+
+                <div id="entries">
+                    <script>
+            getData()
+        </script>
+                </div>
+
+                <h1>New match</h1>
+                <form onsubmit="postData()">
+                    <label for="map">Map</label>
+                    <input type="text" id="map"> <br>
+
+                    <label for="weapon">Weapon</label>
+                    <input type="text" id="weapon"> <br>
+
+                    <label for="points">Points</label>
+                    <input type="number" id="points"> <br>
+
+                    <label for="mode">Mode</label>
+                    <input type="text" id="mode"> <br>
+
+                    <button id="submitButton">Submit</button>
+                </form>
+
+                <p>
+                    <a href="hello.pug">to pug</a>
+                </p>
+            </div>
+        </main>
+        <div id="footer"></div>
+    </div>
+</body>
+
+</html>
