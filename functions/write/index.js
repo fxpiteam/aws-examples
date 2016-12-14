@@ -11,6 +11,7 @@ exports.handle = function (e, ctx, callback) {
             weapon: e.weapon,
             points: e.points,
             mode: e.mode,
+            ratio: e.ratio,
             date: e.date
         },
 

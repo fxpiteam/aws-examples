@@ -31,6 +31,7 @@ function getData() {
                     + blackopsItem.map + ', '
                     + blackopsItem.weapon + ', '
                     + blackopsItem.points + ', '
+                    + blackopsItem.ratio + ', '
                     + blackopsItem.mode + ', '
                     + '</p>');
             });
@@ -49,6 +50,7 @@ function postData () {
             "weapon": $('#weapon').val(),
             "points": $('#points').val(),
             "mode": $('#mode').val(),
+            "ratio": $('#ratio').val(),
             "date": Date.now()
         }),
         contentType: "application/json",
