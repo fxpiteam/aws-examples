@@ -40,16 +40,16 @@
 
                 <h1>New match</h1>
                 <form onsubmit="postData()">
-                    <label for="map">Map</label>
+                    <label for="map">Mapa</label>
                     <input type="text" id="map"> <br>
 
-                    <label for="weapon">Weapon</label>
+                    <label for="weapon">Arma empleada</label>
                     <input type="text" id="weapon"> <br>
 
-                    <label for="points">Points</label>
+                    <label for="points">Puntos totales</label>
                     <input type="number" id="points"> <br>
 
-                    <label for="ratio">Kills/death ratio</label>
+                    <label for="ratio">Ratio K/D</label>
                     <input type="number" id="ratio" step="any"> <br>
 
                     <select id="mode" name="mode">
@@ -57,15 +57,16 @@
                         <option value="Individual"> Individual </option>
                     </select>
 
-                    <button id="submitButton">Submit</button>
+                    <button id="submitButton" class="btn waves-effect">Submit</button>
                 </form>
 
                 <p>
-                    <a href="hello.pug">to pug</a>
+                    <a href="html/mypdf.html" class="btn waves-effect">Statistics in pdfkit</a>
+                    <a href="html/pdf.html" class="btn waves-effect">Statistics in pdfmake</a>
                 </p>
             </div>
         </main>
-        <div id="footer"></div>
+        <div id="footer" class="customizedFooter" ></div>
     </div>
 </body>
 

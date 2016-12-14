@@ -1,4 +1,5 @@
-var lorem = 'Bueno pues aquí hay texto donde explico el por qué de mis asombrosos números jugando a este magnífico juego llamado Call of Duty: Blackops, el cual ha inspirado el realizar toda esta página web. Como no se me ocurre más, simplemente voy a copiar el mismo texto un par de veces más. Bueno pues aquí hay texto donde explico el por qué de mis asombrosos números jugando a este magnífico juego llamado Call of Duty: Blackops, el cual ha inspirado el realizar toda esta página web. Como no se me ocurre más, simplemente voy a copiar el mismo texto un par de veces más. Bueno pues aquí hay texto donde explico el por qué de mis asombrosos números jugando a este magnífico juego llamado Call of Duty: Blackops, el cual ha inspirado el realizar toda esta página web. Como no se me ocurre más, simplemente voy a copiar el mismo texto un par de veces más.';
+var VAR_URL = 'https://pxseppi1mg.execute-api.eu-central-1.amazonaws.com/prod/statistics';
+var lorem = 'El grave problema del modulo pdfkit es que no puede dibujar tablas, o por lo menos de forma nativa. Esto implica que si se desea realizar una tabla para mostrar los datos, tenemos que ver como podemos hacerlo. Por contra el componente pdfmake parece más moderno y la creación de tablas viene nativamente en el paquete. Un contra que he visto de pdfmake es que por defecto crea el PDF es un pop-up, por lo que Chrome tiende a bloquearlo. La solución ha sido bajar el js sin minificar y cambiar el código fuente para que lo muestre nativamente en la misma página. Bueno, aquí van las estadisticas:';
 
 function makePDF() {
 
@@ -44,7 +45,7 @@ function makePDF() {
                 align: 'justify',
                 indent: 30,
                 columns: 2,
-                height: 150,
+                height: 140,
                 ellipsis: true
             });
 

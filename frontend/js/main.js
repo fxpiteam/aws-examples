@@ -24,17 +24,22 @@ function getData() {
         url: VAR_URL,
 
         success: function (data) {
-            $('#entries').html('');
+            var content = '<table> <tr> <th> Map </th> <th> Weapon </th> <th> Points </th> <th> K/D Ratio </th> <th> Mode </th>'
+            
 
             data.Items.forEach(function (blackopsItem) {
-                $('#entries').append('<p>'
-                    + blackopsItem.map + ', '
-                    + blackopsItem.weapon + ', '
-                    + blackopsItem.points + ', '
-                    + blackopsItem.ratio + ', '
-                    + blackopsItem.mode + ', '
-                    + '</p>');
+                content += '<tr> '
+                    + '<td>' + blackopsItem.map + '</td>'
+                    + '<td>' + blackopsItem.weapon + '</td>'
+                    + '<td>' + blackopsItem.points + '</td>'
+                    + '<td>' + blackopsItem.ratio + '</td>'
+                    + '<td>' + blackopsItem.mode + '</td>'
+                    + '</tr>';
             });
+
+            content += '</table>';
+            $('#entries').append(content);
+
         }
     })
 
