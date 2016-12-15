@@ -1,8 +1,7 @@
 const 
     http = require('http'),
     express = require('express'),
-    path = require('path'),
-    deleteMod = require('./functions/delete/index.js');
+    path = require('path');
 
 let 
     app = express(),

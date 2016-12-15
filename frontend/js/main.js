@@ -34,6 +34,7 @@ function getData() {
                     + '<td>' + blackopsItem.points + '</td>'
                     + '<td>' + blackopsItem.ratio + '</td>'
                     + '<td>' + blackopsItem.mode + '</td>'
+                    + '<td>' + '<a class="btn" onclick="deleteData(' + blackopsItem.date + ')" href="#">Delete</a>' + '</td>'
                     + '</tr>';
             });
 
@@ -64,4 +65,24 @@ function postData () {
             location.reload();
         }
     }); 
+};
+
+
+function deleteData (id) {
+    if (confirm("Are you sure?")) {
+        event.preventDefault();
+        return $.ajax({
+            type: 'DELETE',
+            url: VAR_URL,
+            data: JSON.stringify({
+                "date": id
+            }),
+            contentType: "application/json",
+
+            success: function (data) {
+                location.reload();
+            }
+        }); 
+    } 
+    return false;
 };
