@@ -1,14 +1,14 @@
 const 
     http = require('http'),
     express = require('express'),
-    path = require('path');
+    path = require('path'),
+    deleteMod = require('./functions/delete/index.js');
 
 let 
     app = express(),
     server = http.createServer(app);
 
 app.use(express.static(path.join(__dirname)));
-
 
 server.listen(3000, function () {
    var host = server.address().address
