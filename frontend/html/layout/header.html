@@ -1,25 +1,25 @@
-<nav class="customizedNavigation" role="navigation">
+<nav class="customizedFooter" role="navigation">
     <div class="nav-wrapper container">
-        <a href="/" class="center brand-logo">UPOLL</a>
 
-        <a href="/" data-activates="mobile" class="button-collapse" style="margin-left:20px;"><i
-                    class="mdi-navigation-menu black-text" style="font-size:2.2em;"></i></a>
+        <div class="hide-on-med-and-down">
+            <a href="/" class="center brand-logo">COD: BlackOps Statistics</a>
+        </div>
 
-        <ul id="nav-mobile" class="left hide-on-med-and-down">
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Privacy</a></li>
-            <li><a href="#">Terms</a></li>
-        </ul>
+        <div class="hide-on-large-only">
+            <a href="/" class="center brand-logo"> 
+                <img src="images/logo.png" style="height: 50px; width: 60px; padding-top: 1px"> 
+            </a>
+        </div>
 
-        <ul class="side-nav" id="mobile">
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Privacy</a></li>
-            <li><a href="#">Terms</a></li>
-        </ul>
+        <div id="webMenu">
+            <script>$("#webMenu").load("html/layout/web-menu.html")</script>
+        </div>
 
         <ul id="nav-mobile" class="right">
-            <li>{{> langSelector}}</li>
+            <li>
+                <a href="/" class="btn">Home</a>
+            </li>
         </ul>
-
+        
     </div>
 </nav>

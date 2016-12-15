@@ -24,7 +24,7 @@ function getData() {
         url: VAR_URL,
 
         success: function (data) {
-            var content = '<table> <tr> <th> Map </th> <th> Weapon </th> <th> Points </th> <th> K/D Ratio </th> <th> Mode </th>'
+            var content = '<table class="striped responsive-table"> <tr> <th> Map </th> <th> Weapon </th> <th> Points </th> <th> K/D Ratio </th> <th> Mode </th> <th> Delete record </th>'
             
 
             data.Items.forEach(function (blackopsItem) {

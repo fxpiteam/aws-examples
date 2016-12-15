@@ -11,7 +11,7 @@ footer div {
 }
 
 footer h4 {
-    color: #80cd32;
+    color: #4db6ac;
 }
 
 footer a {
@@ -24,7 +24,7 @@ a:visited {
 }
 
 footer a:hover {
-    color: #80cd32;
+    color: #4db6ac;
     text-decoration: none;
 }
 
@@ -49,3 +49,44 @@ footer p {
 .Site-content {
     flex: 1;
 }
+
+
+.my-background{
+    width: 100%;
+    background-size: 100% 100%;
+} 
+
+/* Retina display */
+@media screen and (min-width: 1024px){
+    .my-background{
+        background-image: url('../images/background.png');
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 980px) and (max-width: 1024px){
+    .my-background{
+        background-image: url('../images/background.png');
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 760px) and (max-width: 980px){
+    .my-background{
+        background-image: url('../images/background.png');
+    }
+}
+
+/* Mobile HD */
+@media screen and (min-width: 350px) and (max-width: 760px){
+    .my-background{
+        background-image: url('../images/background.png');
+    }
+}
+
+/* Mobile LD */
+@media screen and (max-width: 350px){
+    .my-background{
+        background-image: url('../images/background.png');
+    }
+} 

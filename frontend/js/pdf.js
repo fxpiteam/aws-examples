@@ -8,14 +8,6 @@ function getData() {
 
         success: function (data) {
             createStatisticsPDF(data.Items);
-            /*
-            var docDefinition = {
-                content: [
-                    { text: 'Dynamic parts', style: 'header' },
-                    table(data.Items, ['Map', 'Weapon', 'Points', 'Ratio', 'Mode'])
-                ]
-            };
-            pdfMake.createPdf(docDefinition).open();*/
         }
     })
 
