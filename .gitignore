@@ -1,3 +1,6 @@
+#configuration file for cognito
+frontend/js/config.js
+
 # Logs
 logs
 *.log

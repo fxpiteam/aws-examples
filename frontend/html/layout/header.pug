@@ -1,0 +1,12 @@
+nav.customizedFooter(role='navigation')
+  .nav-wrapper.container
+    .hide-on-med-and-down
+      a.center.brand-logo(href='/') COD: BlackOps Statistics
+    .hide-on-large-only
+      a.center.brand-logo(href='/')
+        img(src='../images/logo.png', style='height: 50px; width: 60px; padding-top: 1px')
+    #webMenu
+      include web-menu.pug
+    ul#nav-mobile.right
+      li
+        a.btn(href='/') Home

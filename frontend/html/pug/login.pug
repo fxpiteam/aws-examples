@@ -1,0 +1,28 @@
+doctype html
+html
+    head
+        
+        include ../layout/head.html
+        script(src='../dist/my-app.js')
+        
+        
+    body.my-background
+        div.Site
+            include ../layout/header.pug
+            main.Site-content
+                div.container(style='background-color: rgba(255, 255, 255, 0.7);')
+                    h1 Registration form
+                    
+                    form(onsubmit='EntryPoint.createUser()' style='margin-top: 5%;margin-bottom: 5%;')
+                        
+                        label(for='email') Email
+                        input(type='text' id='email' value='rafriosan@gmail.com')
+
+                        label(for='username') Username
+                        input(type='text' id='username' value='myuser')
+
+                        label(for='password') Password
+                        input(type='password' id='password' value='aaaaaaaa')
+
+                        button.btn.waves-effect Create User
+            include ../layout/footer.html

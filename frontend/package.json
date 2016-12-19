@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "build": "webpack",
+    "buildw": "webpack --watch",
+    "pug": "pug ./html/pug --out ./html --pretty --watch"
+  },
+  "private": true,
+  "devDependencies": {
+    "express": "^4.14.0",
+    "json-loader": "^0.5.4",
+    "pug-cli": "^1.0.0-alpha6",
+    "webpack": "^1.14.0"
+  },
+  "dependencies": {
+    "amazon-cognito-identity-js": "^1.8.0"
+  }
+}
