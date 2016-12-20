@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head><meta charset="utf-8">
+<title>My COD: Blackops Statistics</title>
+
+<meta name="description" content="This is a simple web, done to learn">
+
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+
+<link rel="icon" sizes="16x16 32x32" href="images/favicon.ico">
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+
+<link rel="stylesheet" href="../css/main.css">
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+<script src="../js/layout.js"></script>
+<script src="../js/main.js"></script>
+    <script src="../dist/my-app.js"></script>
+  </head>
+  <body class="my-background">
+    <div class="Site">
+      <nav class="customizedFooter" role="navigation">
+        <div class="nav-wrapper container">
+          <div class="hide-on-med-and-down"><a class="center brand-logo" href="/">COD: BlackOps Statistics</a></div>
+          <div class="hide-on-large-only"><a class="center brand-logo" href="/"><img src="../images/logo.png" style="height: 50px; width: 60px; padding-top: 1px"></a></div>
+          <div id="webMenu">
+            <ul class="left" id="nav-mobile">
+              <li><a class="waves-effect" href="/faq" style="display:block"><i class="material-icons"> question_answer</i></a></li>
+              <li><a class="waves-effect" href="sign-up.html"><i class="material-icons"> account_circle </i></a></li>
+            </ul>
+          </div>
+          <ul class="right" id="nav-mobile">
+            <li><a class="btn" href="/">Home</a></li>
+          </ul>
+        </div>
+      </nav>
+      <main class="Site-content">
+        <div class="container" style="background-color: rgba(255, 255, 255, 0.7)">
+          <h1>Confirm user </h1>
+          <p>We are sending you an email with a code you can use to confirm your user in this form.</p>
+          <form onsubmit="EntryPoint.confirmUser()" style="margin-top: 5%;margin-bottom: 5%">
+            <label for="code">code</label>
+            <input type="text" id="code" value="" required>
+            <button class="btn waves-effect">Send code</button>
+          </form>
+          <button class="btn waves-effect" onclick="EntryPoint.resendConfirmUser()">Resend confirmation code</button>
+        </div>
+      </main><footer class="customizedFooter">
+    <div class="container">
+        <div class="row">
+            <div class="col s4 center-align">
+                <h4 class="flow-text">Column</h4>
+                <ul class="">
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                </ul>
+            </div>
+            <div class="col s4 center-align">
+                <h4 class="flow-text">Column</h4>
+                <ul class="">
+                    <li><a href="#">Link</a></li>
+                </ul>
+            </div>
+            <div class="col s4 center-align">
+                <h4 class="flow-text">Column</h4>
+                <ul class="collection-item">
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                </ul>
+            </div>
+            <div class="center-align" style="margin-top: 1%; margin-bottom: 1%">
+                <p>&copy; 2016 COD: Blackops Statistics, Inc. &middot; <a href="#">Link</a> &middot; <a href="#">Link</a> &middot; <a href="#">Link</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+    </div>
+  </body>
+</html>

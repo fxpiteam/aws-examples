@@ -12,6 +12,7 @@
     "webpack": "^1.14.0"
   },
   "dependencies": {
-    "amazon-cognito-identity-js": "^1.8.0"
+    "amazon-cognito-identity-js": "^1.8.0",
+    "aws-sdk": "^2.7.16"
   }
 }

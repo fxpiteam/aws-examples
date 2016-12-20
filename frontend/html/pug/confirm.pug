@@ -1,0 +1,25 @@
+doctype html
+html
+    head
+        
+        include ../layout/head.html
+        script(src='../dist/my-app.js')
+        
+        
+    body.my-background
+        div.Site
+            include ../layout/header.pug
+            main.Site-content
+                div.container(style='background-color: rgba(255, 255, 255, 0.7);')
+                    h1 Confirm user 
+
+                    p We are sending you an email with a code you can use to confirm your user in this form.
+                    
+                    form(onsubmit='EntryPoint.confirmUser()' style='margin-top: 5%;margin-bottom: 5%;')
+                        
+                        label(for='code') code
+                        input(type='text' id='code' value='' required)
+
+                        button.btn.waves-effect Send code
+                    button.btn.waves-effect(onclick='EntryPoint.resendConfirmUser()') Resend confirmation code
+            include ../layout/footer.html

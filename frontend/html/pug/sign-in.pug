@@ -1,0 +1,31 @@
+doctype html
+html
+    head
+        
+        include ../layout/head.html
+        script(src='../dist/my-app.js')
+        
+        
+    body.my-background
+        div.Site
+            include ../layout/header.pug
+            main.Site-content
+                div.container(style='background-color: rgba(255, 255, 255, 0.7);')
+                    h1 Sign in
+
+                    .card.blue-grey.darken-1
+                        .card-content.white-text.center-align
+                            p If you dont have an user yet, stop waiting!
+                            .card-action
+                                a(href='sign-up.html') Create a user now
+                    
+                    form(onsubmit='EntryPoint.signinUser()' style='margin-top: 5%;margin-bottom: 5%;')
+
+                        label(for='username') Username
+                        input(type='text' id='username' value='' required)
+
+                        label(for='password') Password
+                        input(type='password' id='password' value='' required pattern=".{8,}")
+
+                        button.btn.waves-effect Log User
+            include ../layout/footer.html
