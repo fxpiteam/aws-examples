@@ -1,0 +1,30 @@
+doctype html
+html
+    head
+        
+        include ../layout/head.html
+        script(src='../dist/my-app.js')
+        
+        
+    body.my-background
+        div.Site
+            include ../layout/header.pug
+            main.Site-content
+                div.container(style='background-color: rgba(255, 255, 255, 0.7);')
+                    include ../warning.html
+
+                    h1 Detailed information
+                    
+                    .row
+                        .col.s12.m6
+                            .card.blue-grey.darken-1
+                                .card-content.white-text
+                                    span.card-title Match Details
+                                    #data
+                                        script getOneDataPretty()
+                                .card-action
+                                    a(href='../index.html') Go back    
+                        .col.s12.m6
+                            img.responsive-img(src='../images/villa.png')
+
+            include ../layout/footer.html

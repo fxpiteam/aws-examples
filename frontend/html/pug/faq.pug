@@ -1,0 +1,72 @@
+doctype html
+html
+    head
+        
+        include ../layout/head.html
+        script(src='../dist/my-app.js')
+        
+        
+    body.my-background
+        div.Site
+            include ../layout/header.pug
+            main.Site-content
+                div.container(style='background-color: rgba(255, 255, 255, 0.7);')
+
+                    include ../warning.html
+
+                    .hide-on-small-only
+                        .row
+                            .col.s12
+                                h1.header About me
+                                    
+                                .card.horizontal.blue-grey.darken-1
+                                    .card-image
+                                        img(src='../images/team-placeholder.png')
+                                        
+                                
+                                    .card-stacked
+                                        .card-title.center-align.orange-text.strong(style='margin-top:5px') #[b Rafael] #[span.white-text del Rio]
+                                        .card-content.white-text
+                                            p Hard-working and responsible software developer able to adapt to new projects. Interested in new technologies and component design. Teamwork-lover, always trying to promote a pleasing working environment in order to ensure high quality results.
+                                            p.center-align(style='margin-top:5%')
+                                                a.white-text(href='https://es.linkedin.com/in/rafaeldelrio', target='_blank') LinkedIn
+                                                span(style='color: #aaaaaa') |
+                                                a.white-text(href='../pdf/Rafael_del_Rio_Santaella.pdf', target='_blank') Resume         
+                                        .card-action
+                                            .col.s6
+                                                a.waves-effect.waves-cyan.btn-flat.center-align(href='mailto:rafriosan@gmail.com', style='width:100%;') Email
+                                            .col.s6
+                                                a.waves-effect.waves-cyan.btn-flat.center-align(href='tel:622547207', style='width:100%;') Phone
+
+                    
+                    .hide-on-med-and-up
+                        h1 About me
+                        .container
+                            .card.blue-grey.darken-1
+                                .card-image.waves-effect.waves-block.waves-light
+                                    img.responsive-image.activator(src='../images/team-placeholder.png')
+                                    
+                                .card-content.white-text
+                                    span.card-title.activator 
+                                        b.orange-text Rafael #[span.white-text del Rio]
+                                        i.material-icons.right more_vert
+                                        
+                                    p(style='margin-top:5%')
+                                        a.white-text(href='https://es.linkedin.com/in/rafaeldelrio', target='_blank') LinkedIn
+                                        span(style='color: #aaaaaa') |
+                                        a.white-text(href='../pdf/Rafael_del_Rio_Santaella.pdf', target='_blank') Resume 
+                                    
+                                .card-reveal
+                                    span.card-title.grey-text.text-darken-4
+                                        | I define myself as
+                                        i.material-icons.right close
+                                        
+                                    p a hard-working and responsible software developer able to adapt to new projects. Interested in new technologies and component design. Teamwork-lover, always trying to promote a pleasing working environment in order to ensure high quality results.
+                                    .row(style='margin-top: 18px;')
+                                        .col.s6
+                                            a.waves-effect.waves-cyan.btn-flat.center-align.cyan-text(href='mailto:rafriosan@gmail.com', style='width:100%;') Email
+                                        .col.s6
+                                            a.waves-effect.waves-cyan.btn-flat.center-align.cyan-text(href='tel:622547207', style='width:100%;') Phone
+
+
+            include ../layout/footer.html
